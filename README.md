@@ -95,7 +95,7 @@ The output is written to `output.txt`, where:
 ## 🚀 How to Run the Project
 ### 1️⃣ Clone the Repository
 ```sh
-git clone 
+git clone https://github.com/alisa0040/CPU-Scheduler.git
 cd CPU-Scheduler
 ```
 
