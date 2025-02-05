@@ -1,10 +1,19 @@
-all: cmpe351
+TARGET = cmpe351
 
-cmpe351:
-	g++ cmpe351.cpp -o cmpe351
+CXX = g++
+
+CXXFLAGS = -Wall -Wextra -std=c++17
+
+SRC = $(wildcard src/*.cpp)
+
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
 
 clean:
-	rm -f cmpe351
+	rm -f $(TARGET)
 
-test: cmpe351
+test: $(TARGET)
 	bash test.sh
+
+run: $(TARGET)
+	./$(TARGET) -t 2 -f input.txt -o output.txt

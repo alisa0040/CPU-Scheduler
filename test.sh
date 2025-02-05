@@ -10,7 +10,7 @@ else
   exit 1
 fi
 
-nl=$(wc -l output.txt| cut -f1 -d " ")
+nl=$(wc -l < output.txt | tr -d '[:space:]')
 
 if [ $nl -eq 6 ] ; then
   echo "Pass: Number of lines in output seem OK!"
