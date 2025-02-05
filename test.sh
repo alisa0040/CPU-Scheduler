@@ -1,7 +1,7 @@
 echo "Running tests..."
 echo
 
-output=$(./cmpe351 -t 2 -f input.txt  -o output.txt)
+output=$(./scheduler -t 2 -f input.txt  -o output.txt)
 
 if [ $? -eq 0 ] ; then
   echo "Pass: Program exited zero"

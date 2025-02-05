@@ -1,4 +1,4 @@
-TARGET = cmpe351
+TARGET = scheduler
 
 CXX = g++
 
